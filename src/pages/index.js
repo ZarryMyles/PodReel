@@ -13,8 +13,247 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
+
+      {/* Start of Code */}
       <main>
-        <h1 className="text-5xl">Podreel</h1>
+        <div id="stickyNav">
+          <div id="logo">
+            <img src="assets/podreel-logo.svg" />
+            <p>podreel</p>
+          </div>
+          <a href="add link to get early access">
+            <button>Get Early Access</button>
+          </a>
+        </div>
+        <div className="pageSection" id="landingPage">
+          <div id="background"></div>
+          <div id="container">
+            <div id="pageHeader">
+              <h1 className="font-satoshi">Podcast growth.</h1>
+              <h2>Powered by social media</h2>
+            </div>
+            <div id="description">
+              <p>
+                Use podreel to create short, captioned videos of your podcast (
+                <u>in less than 120 seconds</u>). Made for busy podcasters and
+                social media managers.
+              </p>
+            </div>
+            <div id="options">
+              <a className="earlyAccess" href="add link to get early access">
+                <button>Get Early Access</button>
+              </a>
+            </div>
+            <a id="inspireLink" href="#podreelsToInspire">
+              <img src="assets/arrow.svg" />
+              <p>Check out some examples</p>
+              <img src="assets/arrow.svg" />
+            </a>
+          </div>
+        </div>
+        <div className="pageSection" id="beforeAndAfter">
+          <div id="selection1" className="selection bg-[#FB999C]">
+            <button onclick="switchSection(0,1);" id="beforePodreelSelection">
+              Before podreel
+            </button>
+            <button
+              onclick="switchSection(0,2);"
+              id="afterPodreelSelection"
+              className="bg-transparent text-[rgba(255,255,255,0.6)]"
+            >
+              After podreel
+            </button>
+          </div>
+          <div id="sections1">
+            <div id="beforePodreel">
+              <img className="display" src="assets/withoutPodreel.svg" />
+              <img className="face" src="assets/sadFace.png" />
+            </div>
+            <div id="afterPodreel" className="hidden">
+              <img className="display" src="assets/withPodreel.svg" />
+              <img className="face" src="assets/happyFace.png" />
+            </div>
+          </div>
+        </div>
+        <div className="pageSection" id="instructions">
+          <div id="instructionsHeader">
+            <h1 className="font-satoshi">Just 3 steps</h1>
+            <h4>to grow your podcast with social media</h4>
+          </div>
+          <div id="steps">
+            <div className="step" id="step1">
+              <div className="instruction">
+                <p className="stepNumber">Step 1</p>
+                <h1 className="font-satoshi">✂️ Clip</h1>
+                <p>
+                  Add your podcast episode (both audio and video files
+                  supported) and clip a great part of it. We’ll start
+                  transcribing.
+                </p>
+              </div>
+              <img src="assets/clipImage.png" />
+            </div>
+            <div className="step" id="step2">
+              <div className="instruction">
+                <p className="stepNumber">Step 2</p>
+                <h1 className="font-satoshi">🎨 Choose</h1>
+                <p>
+                  Get a head start by choosing templates. Or start with a blank
+                  canvas, if that’s your thing!
+                </p>
+              </div>
+              <img src="assets/chooseImage.gif" />
+            </div>
+            <div className="step" id="step3">
+              <div className="instruction">
+                <p className="stepNumber">Step 3</p>
+                <h1 className="font-satoshi">🤘 Customize</h1>
+                <p>
+                  Unleash your inner designer. Add your brand colors and
+                  customize every element! Now, download and share on social
+                  channels.
+                </p>
+              </div>
+              <img src="assets/customizeImage.gif" />
+            </div>
+          </div>
+        </div>
+        <div className="pageSection" id="whyPodreel">
+          <h1 id="whyTitle" className="font-satoshi">
+            Why podreel?
+          </h1>
+          <div id="reasons">
+            <div className="reason r1" id="movie">
+              <img src="assets/movie.svg" />
+              <h1 className="font-satoshi">Your podcast is like a movie</h1>
+              <p>
+                <span className="font-bold">
+                  A film crew don’t just stop at making a film.
+                </span>{" "}
+                They distribute and let us (audience) know that we *must* watch
+                the film.
+                <br />
+                <br />
+                Let everyone know that you’ve dropped a new podcast episode.
+              </p>
+            </div>
+            <div className="reason r2" id="repurpose">
+              <img src="assets/repurpose.svg" />
+              <h1 className="font-satoshi">Repurpose without limits</h1>
+              <p>
+                <span className="font-bold">
+                  Your podcast episodes have timeless insights.
+                </span>{" "}
+                Share them as podreels and keep acquiring listeners via social
+                media. <br />
+                <br />
+                Don’t let your podcast insights fall on deaf ears, ever again!
+              </p>
+            </div>
+            <div className="reason r3" id="hangout">
+              <img src="assets/hangout.svg" />
+              <h1 className="font-satoshi">Hangout. Where they hangout</h1>
+              <p>
+                <span className="font-bold">
+                  Your audience spends time on social media.
+                </span>{" "}
+                Just an announcement post won’t increase podcast downloads.{" "}
+                <br />
+                <br />
+                Lure your followers by sharing multiple podreels, from the same
+                episode.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="pageSection" id="podreelsToInspire">
+          <h1 className="font-satoshi">Some podreels to inspire you...</h1>
+          <div className="selection bg-[#7400B8]">
+            <button onclick="switchSection(1,1)" id="audioPodcasts">
+              Audio podcasts
+            </button>
+            <button
+              onclick="switchSection(1,2)"
+              id="videoPodcasts"
+              className="bg-transparent text-[rgba(255,255,255,0.6)]"
+            >
+              Video podcasts
+            </button>
+          </div>
+          <div id="sections2">
+            <div id="audioToInspire">
+              <div className="showcaseFrame border-[#FF1F8A]">
+                {/* <placeholder to embed video> */}
+              </div>
+              <div className="showcaseFrame border-[#F45C23]">
+                {/* <placeholder to embed video> */}
+              </div>
+              <div className="showcaseFrame border-[#544FEB]">
+                {/* <placeholder to embed video> */}
+              </div>
+            </div>
+            <div id="videoToInspire" className="hidden">
+              <div className="showcaseFrame border-[#FF1F8A]">
+                {/* <placeholder to embed video> */}
+              </div>
+              <div className="showcaseFrame border-[#F45C23]">
+                {/* <placeholder to embed video> */}
+              </div>
+              <div className="showcaseFrame border-[#544FEB]">
+                {/* <placeholder to embed video> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="pageSection" id="podreelIsForYou">
+          <div id="forYouTitle">
+            <h1 className="font-satoshi">podreel is for you..</h1>
+            <h2>..if you want to grow your podcast.</h2>
+          </div>
+          <div id="audiences">
+            <div id="socialMediaManagers" className="bg-[#FF1F8A]">
+              <h1 className="font-satoshi">Social Media Managers</h1>
+              <p>
+                <span className="font-bold">Crush your engagement metrics</span>{" "}
+                by creating a pipeline of posts with just one episode.
+              </p>
+              <img src="assets/socialMediaManagers.svg" />
+            </div>
+            <div id="podcasters" className="bg-[#F45C23]">
+              <h1 className="font-satoshi">Podcasters</h1>
+              <p>
+                <span className="font-bold">
+                  Don’t just release new episodes,
+                </span>{" "}
+                distribute them for maximum traction.
+              </p>
+              <img src="assets/podcasters.svg" />
+            </div>
+            <div id="agencies" className="bg-[#544FEB]">
+              <h1 className="font-satoshi">Agencies</h1>
+              <p>
+                <span className="font-bold">
+                  Scale podcast promotions for clients
+                </span>{" "}
+                without favours from video editors.
+              </p>
+              <img src="assets/agencies.svg" />
+            </div>
+          </div>
+        </div>
+        <div id="signUp">
+          <div id="signUpContents">
+            <h1 className="font-satoshi">Sign up to get early access</h1>
+            <div id="subtext">
+              <h3 className="sparkle">✨</h3>
+              <h2>We onboard people every week.</h2>
+              <h3 className="sparkle">✨</h3>
+            </div>
+            <a href="add link to get early access">
+              <button>Get Early Access</button>
+            </a>
+          </div>
+        </div>
       </main>
     </>
   );
