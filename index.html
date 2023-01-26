@@ -29,15 +29,25 @@
       <div id="background"></div>
       <div id="container">
         <div class="md:mt-10" id="pageHeader">
-          <h1 style="font-family: 'Satoshi', sans-serif">
+          <h1
+            class="hidden md:block"
+            style="font-family: 'Satoshi', sans-serif"
+          >
             podreel is a <span class="signGrad">trailer for</span><br />
             <span class="signGrad">your podcast</span>
+          </h1>
+          <h1
+            class="md:hidden text-[41px]"
+            style="font-family: 'Satoshi', sans-serif"
+          >
+            podreel is a <span class="signGrad">trailer </span><br />
+            <span class="signGrad">for your podcast</span>
           </h1>
         </div>
         <div id="description">
           <p>
             <b>Increase</b> podcast downloads, <b>acquire</b> new listeners and
-            <br />
+            <span class="md:inline hidden"><br /></span>
             get closer to <b>generating revenue off your podcast.</b>
           </p>
         </div>
@@ -62,13 +72,20 @@
           After podreel
         </button>
       </div>
-      <div class="flex md:flex-row flex-col justify-center my-5 gap-x-2">
+      <div
+        class="flex md:flex-row flex-col justify-center md:items-stretch items-center my-5 gap-x-2"
+      >
         <img id="befAfImage1" src="assets/withoutPodreel.svg" width="900px" />
-        <img id="befAfImage2" src="assets/sadFace.png" width="450px" />
+        <img
+          id="befAfImage2"
+          src="assets/sadFace.png"
+          width="450px"
+          class="md:w-[450px] w-[210px] md:mt-0 mt-5"
+        />
       </div>
     </div>
 
-    <!-- Instructions Section -->
+    <!-- Instructions Section (commented out in case it's needed later) -->
     <!-- <div class="pageSection" id="instructions">
 			<div id="instructionsHeader">
 				<h1 style="font-family: 'Satoshi', sans-serif;">Just 3 steps</h1>
@@ -124,10 +141,13 @@
 
     <!-- Examples Section -->
     <div class="pageSection text-center py-10" id="podreelsToInspire">
-      <h1 style="font-family: 'Satoshi', sans-serif">
+      <h1 class="text" style="font-family: 'Satoshi', sans-serif">
         Some podreels to inspire you...
       </h1>
-      <p style="font-size: 30px; font-family: 'Inter'; color: #787878">
+      <p
+        class="md:text-[30px] text-[18px]"
+        style="font-family: 'Inter'; color: #787878"
+      >
         podreels look great on both phone and desktops.
       </p>
       <div

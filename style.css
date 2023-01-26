@@ -639,8 +639,11 @@ button {
     height: 50px;
   }
   #stickyNav button {
-    font-size: 15;
-    width: 40%;
+    font-size: 13px;
+    width: 100%;
+  }
+  #stickyNav {
+    padding-right: 5px;
   }
   #stickyNav #logo {
     font-size: 28px;
@@ -648,18 +651,19 @@ button {
   #logo p {
     font-size: 0.8em;
   }
+
   #landingPage h1 {
-    padding-top: 60px;
-  }
-  #pageHeader h2 {
-    margin-bottom: 0;
+    padding-top: 150px;
+    font-size: 41px;
+    line-height: 42px;
+    padding: 150px 10px 0 10px;
   }
   #description p {
     margin-top: 0;
-    font-size: 24px;
+    font-size: 19px;
   }
   #inspireLink {
-    margin-top: 0;
+    margin-top: 60px;
     padding-top: 0;
   }
   .selection button {
@@ -669,7 +673,7 @@ button {
   .display {
     width: 90%;
   }
-  .face {
+  #befAfImage2 .face {
     width: 75%;
     margin-bottom: 15px;
   }
@@ -705,7 +709,9 @@ button {
     text-align: center;
   }
   #podreelsToInspire h1 {
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 25px;
   }
   #forYouTitle h1 {
     font-size: 60px;
