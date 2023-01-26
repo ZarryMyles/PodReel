@@ -1,62 +1,25 @@
 // Button toggler with 2 states for the before and after podreel section
-let sections = [1, 0];
-function switchSection(portion, section) {
-  if (portion == 0 && sections[portion] != section) {
-    if (section == 1) {
-      sections[portion] = section;
-      document.getElementById("beforePodreelSelection").style.backgroundColor =
-        "white";
-      document.getElementById("afterPodreelSelection").style.backgroundColor =
-        "transparent";
-      document.getElementById("beforePodreel").style.display = "flex";
-      document.getElementById("afterPodreel").style.display = "none";
+function switchSection(number) {
+  // Set both buttons to inactive
+  document.getElementById("selection1").style.backgroundColor = "transparent";
+  document.getElementById("selection2").style.backgroundColor = "transparent";
+  document.getElementById("selection1").style.color = "rgba(255,255,255,.6)";
+  document.getElementById("selection2").style.color = "rgba(255,255,255,.6)";
 
-      document.getElementById("selection1").style.backgroundColor = "#FB999C";
-
-      document.getElementById("beforePodreelSelection").style.color = "#000000";
-      document.getElementById("afterPodreelSelection").style.color =
-        "rgba(255,255,255,.6)";
-    }
-    if (section == 2) {
-      sections[portion] = section;
-      document.getElementById("beforePodreelSelection").style.backgroundColor =
-        "transparent";
-      document.getElementById("afterPodreelSelection").style.backgroundColor =
-        "white";
-      document.getElementById("beforePodreel").style.display = "none";
-      document.getElementById("afterPodreel").style.display = "flex";
-
-      document.getElementById("selection1").style.backgroundColor = "#77DA87";
-
-      document.getElementById("afterPodreelSelection").style.color = "#000000";
-      document.getElementById("beforePodreelSelection").style.color =
-        "rgba(255,255,255,.6)";
-    }
-  } else if (portion == 1 && sections[portion] != section) {
-    if (section == 1) {
-      sections[portion] = section;
-      document.getElementById("audioPodcasts").style.backgroundColor = "white";
-      document.getElementById("videoPodcasts").style.backgroundColor =
-        "transparent";
-      document.getElementById("audioToInspire").style.display = "flex";
-      document.getElementById("videoToInspire").style.display = "none";
-
-      document.getElementById("audioPodcasts").style.color = "#000000";
-      document.getElementById("videoPodcasts").style.color =
-        "rgba(255,255,255,.6)";
-    }
-    if (section == 2) {
-      sections[portion] = section;
-      document.getElementById("audioPodcasts").style.backgroundColor =
-        "transparent";
-      document.getElementById("videoPodcasts").style.backgroundColor = "white";
-      document.getElementById("audioToInspire").style.display = "none";
-      document.getElementById("videoToInspire").style.display = "flex";
-
-      document.getElementById("videoPodcasts").style.color = "#000000";
-      document.getElementById("audioPodcasts").style.color =
-        "rgba(255,255,255,.6)";
-    }
+  // Set the selected button to active and change the images
+  if (number == 1) {
+    document.getElementById("selection").style.backgroundColor = "#FB999C";
+    document.getElementById("selection1").style.backgroundColor = "white";
+    document.getElementById("selection1").style.color = "#000000";
+    document.getElementById("befAfImage1").src = "assets/withoutPodreel.svg";
+    document.getElementById("befAfImage2").src = "assets/sadFace.png";
+  }
+  if (number == 2) {
+    document.getElementById("selection").style.backgroundColor = "#77DA87";
+    document.getElementById("selection2").style.backgroundColor = "white";
+    document.getElementById("selection2").style.color = "#000000";
+    document.getElementById("befAfImage1").src = "assets/withPodreel.svg";
+    document.getElementById("befAfImage2").src = "assets/happyFace.png";
   }
 }
 
