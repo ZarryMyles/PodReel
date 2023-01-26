@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+  	<title>Podreel</title>
+		<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
+  	<link href="style.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<div id="stickyNav">
+			<div id="logo">
+				<img src="assets/podreel-logo.svg">
+				<p>podreel</p>
+			</div
+			<a href="add link to get early access"><button>Get Early Access</button></a>
+		</div>
+		<div class="pageSection" id="landingPage">
+			<div id="background">
+			</div>
+			<div id="container">
+				<div id="pageHeader">
+					<h1 style="font-family: 'Satoshi', sans-serif;">Podcast growth.</h1>
+					<h2>Powered by social media</h2>
+				</div>
+				<div id="description">
+					<p>Use podreel to create short, captioned videos of your podcast (<u>in less than 120 seconds</u>). Made for busy podcasters and social media managers.</p>
+				</div>
+				<div id="options">
+					<a class="earlyAccess" href="add link to get early access"><button>Get Early Access</button></a>
+				</div>
+				<a id="inspireLink" href="#podreelsToInspire">
+					<p>👇Check out some examples👇</p>
+				</a>
+			</div>
+		</div>
+
+
+		<div class="pageSection" id="beforeAndAfter">
+			<div id="selection1" class="selection" style="background-color: #FB999C">
+				<button onclick="switchSection(0,1);" id="beforePodreelSelection">Before podreel</button>
+				<button onclick="switchSection(0,2);" id="afterPodreelSelection" style="background-color: transparent; color: rgba(255,255,255,.6)">After podreel</button>
+			</div>
+			<div id="sections1">
+				<div id="beforePodreel">
+					<img class="display" src="assets/withoutPodreel.svg">
+					<img class="face" src="assets/sadFace.png">
+				</div>
+				<div id="afterPodreel" style="display:none;">
+					<img class="display" src="assets/withPodreel.svg">
+					<img class="face" src="assets/happyFace.png">
+				</div>
+			</div>
+		</div>
+		<!-- <div class="pageSection" id="instructions">
+			<div id="instructionsHeader">
+				<h1 style="font-family: 'Satoshi', sans-serif;">Just 3 steps</h1>
+				<h4>to grow your podcast with social media</h4>
+			</div>
+			<div id="steps">
+				<div class="step" id="step1">
+					<div class="instruction">
+						<p class="stepNumber">Step 1</p>
+						<h1 style="font-family: 'Satoshi', sans-serif;">✂️ Clip</h1>
+						<p>Add your podcast episode (both audio and video files supported) and clip a great part of it. We’ll start transcribing.</p>
+					</div>
+					<img src="assets/clipImage.png">
+				</div>
+				<div class="step" id="step2">
+					<div class="instruction">
+						<p class="stepNumber">Step 2</p>
+						<h1 style="font-family: 'Satoshi', sans-serif;">🎨 Choose</h1>
+						<p>Get a head start by choosing templates. Or start with a blank canvas, if that’s your thing!</p>
+					</div>
+					<img src="assets/chooseImage.gif">
+				</div>
+				<div class="step" id="step3">
+					<div class="instruction">
+						<p class="stepNumber">Step 3</p>
+						<h1 style="font-family: 'Satoshi', sans-serif;">🤘 Customize</h1>
+						<p>Unleash your inner designer. Add your brand colors and customize every element! Now, download and share on social channels.</p>
+					</div>
+					<img src="assets/customizeImage.gif">
+				</div>
+			</div>
+		</div>
+		<div class="pageSection" id="whyPodreel">
+			<h1 id="whyTitle" style="font-family: 'Satoshi', sans-serif;">Why podreel?</h1>
+			<div id="reasons">
+				<div id="r1" class="reason" id="movie">
+					<img src="assets/movie.svg">
+					<h1 style="font-family: 'Satoshi', sans-serif;">Your podcast is like a movie</h1>
+					<p><span style="font-weight: 700;">A film crew don’t just stop at making a film.</span> They distribute and let us (audience) know that we *must* watch the film.<br><br>Let everyone know that you’ve dropped a new podcast episode.</p>
+				</div>
+				<div id="r2" class="reason" id="repurpose">
+					<img src="assets/repurpose.svg">
+					<h1 style="font-family: 'Satoshi', sans-serif;">Repurpose without limits</h1>
+					<p><span style="font-weight: 700;">Your podcast episodes have timeless insights.</span> Share them as podreels and keep acquiring listeners via social media. <br><br>Don’t let your podcast insights fall on deaf ears, ever again!</p>
+				</div>
+				<div id="r3" class="reason" id="hangout">
+					<img src="assets/hangout.svg">
+					<h1 style="font-family: 'Satoshi', sans-serif;">Hangout. Where they hangout</h1>
+					<p><span style="font-weight: 700;">Your audience spends time on social media.</span> Just an announcement post won’t increase podcast downloads. <br><br>Lure your followers by sharing multiple podreels, from the same episode.</p>
+				</div>
+			</div>
+		</div> -->
+		<div class="pageSection text-center py-10 " id="podreelsToInspire">
+			<h1 style="font-family: 'Satoshi', sans-serif;">Some podreels to inspire you...</h1>
+            <p style="font-size: 30px; font-family: 'Inter'; color: #787878;
+            ">podreels look great on both phone and desktops.</p>
+			<!-- <div class="selection" style="background-color: #7400B8;">
+				<button onclick="switchSection(1,1)" id="audioPodcasts">Audio podcasts</button>
+				<button onclick="switchSection(1,2)" id="videoPodcasts" style="background-color:transparent; color: rgba(255,255,255,.6)">Video podcasts</button>
+			</div> -->
+				<div class="flex relative flex-wrap md:px-16 items-center justify-center gap-x-12 mt-16">
+					<div class="showcaseFrame flex flex-col" >
+                        <div class=" h-1/2 flex items-start justify-end p-9">
+                            <img src="assets/Vector.png" alt="arrow">
+                        </div>
+                        <div class="h-1/2 flex flex-col text-center justify-end text-white pb-5">
+                            <p class="text-[19px]">[AUDIO PODCAST]</p>
+                            <p class="underP text-[44px] font-inter font-semibold">James Clear on Atomic Habits </p>
+                        </div>
+					</div>
+
+					<div class="showcaseFrame flex flex-col" >
+                        <div class=" h-1/2 flex items-start justify-end p-9">
+                            <img src="assets/Vector.png" alt="arrow">
+                        </div>
+                        <div class="h-1/2 flex flex-col text-center justify-end text-white pb-5">
+                            <p class="underP text-[44px] font-inter font-semibold">Naval Ravikant on wealth and joy</p>
+                        </div>
+					</div>					
+                    
+                    <div class="showcaseFrame flex flex-col" >
+                        <div class=" h-1/2 flex items-start justify-end p-9">
+                            <img src="assets/Vector.png" alt="arrow">
+                        </div>
+                        <div class="h-1/2 flex flex-col text-center justify-end text-white pb-5">
+                            <p class="underP text-[44px] font-inter font-semibold">Kunal Shah on Human Motivations</p>
+                        </div>
+					</div>
+				</div>
+		</div>
+
+
+		<div class="pageSection mt-10 pb-9" id="podreelIsForYou">
+			<div id="forYouTitle">
+				<h1 style="font-family: 'Inter', sans-serif;">Where can i share podreels?</h1>
+				<h2>Short answer: Everywhere your podcast has a presence</h2>
+			</div>
+			<div id="selection2" class="selection2" style="background-color: #544FEB;">
+				<button onclick="switchShareSection(1);" id="shareOption1">Podcast apps</button>
+				<button onclick="switchShareSection(2);" id="shareOption2" style="background-color: transparent; color: rgba(255,255,255,.6)">Web Pages</button>
+				<button onclick="switchShareSection(3);" id="shareOption3" style="background-color: transparent; color: rgba(255,255,255,.6)">Social Media</button>
+				<button onclick="switchShareSection(4);" id="shareOption4" style="background-color: transparent; color: rgba(255,255,255,.6)">Podcast transcripts</button>
+			</div>
+            <div id-"shareMedia" class="my-6 flex items-center justify-center">
+                <img id="shareImage" src="assets/shareSection/podcast.gif" class="max-h-[500px]" alt="share media" />
+            </div> 
+		</div>
+
+
+		<div id="signUp">
+			<div id="signUpContents" class="flex flex-row flex-nowrap justify-between items-center px-3 py-12">
+                <p class="h-full text-7xl">✨</p>
+                <div class="flex flex-col justify-center">
+                    <h1 class="font-inter leading-[76px] font-bold text-[65px]">Sign up to <span class="signGrad">boost your</span><br /> <span class="signGrad">podcast metrics</span></h1>
+                    <p class="font-inter text-[27px] my-7">We onboard people every week.</p>
+                        <a class="earlyAccess" href="add link to get early access"><button>Get Early Access</button></a>
+                </div>
+                <p class="h-full text-7xl">✨</p>
+			</div>
+		</div>
+
+        <div id="warning" class="w-screen bg-[#FE0000] flex flex-col h-6">
+            <div class="marq text-white font-inter text-[16px]">
+                <div class="track">
+                    ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution
+                </div>
+            </div>
+        </div>
+        <div class="w-screen bg-[#FCEA2B] border-y-[3px] border-[#FE0000] flex flex-row justify-between items-center px-[120px] py-6">
+            <p class="text-7xl">🔥</p>
+            <p class="text-inter text-[25px] text-black text-center">podreel will <span class="font-bold">increase</span> your podcast downloads,<br /> <span class="font-bold">acquire</span> new listeners and get you closer to<br /> <span class="font-bold">generating revenue off your podcast</span>.</p>
+            <p class="text-7xl">🔥</p>
+        </div>
+
+
+	</body>
+	<script src="script.js"></script>
+</html>
