@@ -26,10 +26,10 @@ function switchSection(number) {
 // Button toggler with 4 states for the share section
 function switchShareSection(number) {
   // Set all buttons to inactive
-  document.getElementById("shareOption1").style.backgroundColor = "transparent";
-  document.getElementById("shareOption2").style.backgroundColor = "transparent";
-  document.getElementById("shareOption3").style.backgroundColor = "transparent";
-  document.getElementById("shareOption4").style.backgroundColor = "transparent";
+  document.getElementById("shareOption1").style.backgroundColor = "#544feb";
+  document.getElementById("shareOption2").style.backgroundColor = "#544feb";
+  document.getElementById("shareOption3").style.backgroundColor = "#544feb";
+  document.getElementById("shareOption4").style.backgroundColor = "#544feb";
   document.getElementById("shareOption1").style.color = "rgba(255,255,255,.6)";
   document.getElementById("shareOption2").style.color = "rgba(255,255,255,.6)";
   document.getElementById("shareOption3").style.color = "rgba(255,255,255,.6)";
@@ -58,6 +58,23 @@ function switchShareSection(number) {
       "assets/shareSection/transcript.png";
   }
 }
+const switchButtonClick = () => {
+  switchSection(number);
+  autoSwitch = false;
+};
+// auto switch flag
+// let autoSwitch = true;
+// let timings = [6, 3, 3, 3, 0];
+// function switchSectionRecursively(index) {
+//   if (!autoSwitch) return;
+//   if (index < timings.length) {
+//     setTimeout(function () {
+//       switchShareSection(index + 1);
+//       switchSectionRecursively(index + 1);
+//     }, timings[index] * 1000);
+//   }
+// }
+// switchSectionRecursively(0);
 
 // Animation for the stars
 const { TweenMax, _ } = window;
