@@ -14,20 +14,28 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div id="stickyNav">
-      <div id="logo">
-        <img src="assets/podreel-logo.svg" />
+    <div id="stickyNav" class="gradient-box-nav pr-1 md:pr-4">
+      <div id="logo" class="py-4">
+        <img src="assets/podreel-logo.svg" class="-mt-4 -mr-4" />
         <p>podreel</p>
       </div>
       <a href="add link to get early access"
-        ><button class="gradient-box">Get Early Access</button></a
+        ><button
+          class="gradient-box"
+          class="text-center flex items-center md:mr-[25px]"
+        >
+          Get Early Access
+        </button></a
       >
     </div>
 
     <!-- Landing Section -->
-    <div class="pageSection h-screen" id="landingPage">
-      <div id="background" class="h-screen"></div>
-      <div id="container" class="flex flex-col justify-center items-center">
+    <div class="pageSection h-[80vh] pt-10" id="landingPage">
+      <div id="background" class="h-full"></div>
+      <div
+        id="container"
+        class="flex flex-col justify-center items-center h-full"
+      >
         <div class="" id="pageHeader">
           <h1
             class="hidden md:block"
@@ -51,10 +59,10 @@
             get closer to <b>generating revenue off your podcast.</b>
           </p>
         </div>
-        <a class="earlyAccess" href=""
+        <a class="earlyAccess mt-[30px]" href=""
           ><button class="gradient-box">Get Early Access</button></a
         >
-        <a class="mt-7" id="inspireLink" href="#podreelsToInspire">
+        <a class="mt-[30px]" id="inspireLink" href="#podreelsToInspire">
           <p>👇Check out some podreels👇</p>
         </a>
       </div>
@@ -85,9 +93,12 @@
         <img
           id="befAfImage2"
           src="assets/sadFace.png"
-          width="450px"
-          class="md:w-[450px] w-[210px] md:mt-0 mt-5"
+          class="object-contain md:w-[450px] md:mt-0 mt-5"
         />
+        <!-- <div
+          class="bg-contain bg-center bg-no-repeat md:w-[450px] w-[210px] md:mt-0 mt-5"
+          style="background-image: url(assets/sadFace.png)"
+        /> -->
       </div>
     </div>
 
@@ -154,7 +165,7 @@
         Some podreels to inspire you...
       </h1>
       <p
-        class="md:text-[30px] text-[18px]"
+        class="md:text-[30px] text-[18px] font-[500]"
         style="font-family: 'Inter'; color: #787878"
       >
         podreels look great on both phone and desktops.
@@ -162,7 +173,11 @@
       <div
         class="flex relative flex-wrap md:px-16 items-center justify-center gap-x-12 mt-16"
       >
-        <div class="showcaseFrame flex flex-col">
+        <a
+          href="https://www.youtube.com/watch?v=T2r1jyhT2vg"
+          target="_blank"
+          class="showcaseFrame flex flex-col"
+        >
           <div class="h-1/2 flex items-start justify-end p-9">
             <img src="assets/Vector.png" alt="arrow" />
           </div>
@@ -171,14 +186,18 @@
           >
             <p class="text-[19px]">[AUDIO PODCAST]</p>
             <p
-              class="underP text-[22px] md:text-[40px] font-inter font-semibold"
+              class="underP text-[22px] md:text-[40px] font-inter font-semibold leading-tight"
             >
               James Clear on Atomic Habits
             </p>
           </div>
-        </div>
+        </a>
 
-        <div class="showcaseFrame flex flex-col">
+        <a
+          href="https://www.youtube.com/watch?v=3qHkcs3kG44"
+          target="_blank"
+          class="showcaseFrame flex flex-col"
+        >
           <div class="h-1/2 flex items-start justify-end p-9">
             <img src="assets/Vector.png" alt="arrow" />
           </div>
@@ -186,27 +205,31 @@
             class="h-1/2 flex flex-col text-center justify-end text-white pb-5 px-6"
           >
             <p
-              class="underP text-[22px] md:text-[40px] font-inter font-semibold"
+              class="underP text-[22px] md:text-[40px] font-inter font-semibold leading-tight"
             >
               Naval Ravikant on wealth and joy
             </p>
           </div>
-        </div>
+        </a>
 
-        <div class="showcaseFrame flex flex-col">
+        <a
+          href="https://www.youtube.com/watch?v=nl1PIagzgUo"
+          target="_blank"
+          class="bg-center showcaseFrame flex flex-col"
+        >
           <div class="h-1/2 flex items-start justify-end p-9">
-            <img src="assets/Vector.png" alt="arrow" />
+            <img src="assets/Vector.png" class="bg-center" alt="arrow" />
           </div>
           <div
             class="h-1/2 flex flex-col text-center justify-end text-white pb-5 px-6"
           >
             <p
-              class="underP text-[22px] md:text-[40px] font-inter font-semibold"
+              class="underP text-[22px] md:text-[40px] font-inter font-semibold leading-tight"
             >
               Kunal Shah on Human Motivations
             </p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -220,7 +243,7 @@
           style="font-family: 'Inter', sans-serif"
           class="text-[40px] md:text-[75px]"
         >
-          Where can i share podreels?
+          Where can I share podreels?
         </h1>
         <h2 class="text-[18px] md:text-[30px]">
           Short answer: Everywhere your podcast has a presence
@@ -229,7 +252,7 @@
       <div class="px-4 md:px-24">
         <div
           id="selection2"
-          class="selection2 px-2 py-3 w-full md:rounded-[150px] mx-auto md:bg-[#544feb] md:text-[24px] text-[20px] grid grid-cols-4 gap-1"
+          class="selection2 px-2 py-3 w-full md:rounded-[150px] mx-auto md:bg-[#544feb] md:text-[24px] text-[20px] grid grid-cols-4 gap-3"
         >
           <button
             onclick="switchShareSection(1);"
@@ -283,7 +306,7 @@
         <p class="hidden md:block h-full text-7xl">✨</p>
         <div class="flex flex-col justify-center">
           <h1
-            class="font-inter leading-[46px] md:leading-[67px] font-bold text-[40px] md:text-[65px]"
+            class="font-inter leading-[46px] leading-[114%] font-bold text-[40px] md:text-[67px]"
           >
             Sign up to <span class="signGrad">boost your</span><br />
             <span class="signGrad">podcast metrics</span>
@@ -291,8 +314,12 @@
           <p class="font-inter text-[27px] my-7">
             We onboard people every week.
           </p>
-          <a class="earlyAccess" href="add link to get early access"
-            ><button class="gradient-box">Get Early Access</button></a
+          <a class="" href="add link to get early access"
+            ><button
+              class="btn-gradient-2 flex items-center px-[29px] mx-auto text-black justify-center"
+            >
+              Get Early Access
+            </button></a
           >
         </div>
         <p class="hidden md:block h-full text-7xl">✨</p>
@@ -301,13 +328,14 @@
 
     <!-- Footer -->
     <div id="warning" class="w-screen bg-[#FE0000] flex flex-col h-6">
-      <div class="marq text-white font-inter text-[16px]">
-        <div class="track">
+      <div class="text-white font-inter text-[16px] flex justify-center">
+        <div class="track hidden md:block">
           ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
           Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
           Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
           Warning - Proceed with caution
         </div>
+        <div class="track md:hidden">⚠️ Warning - Proceed with caution</div>
       </div>
     </div>
     <div
@@ -315,7 +343,7 @@
     >
       <p class="text-[33px] md:text-7xl">🔥</p>
       <p
-        class="text-inter leading-tight text--[13px] md:text-[25px] text-black text-center w-full md:px-0 px-4"
+        class="text-inter leading-tight font-[400] text--[13px] md:text-[25px] text-black text-center w-full md:px-0 px-4"
       >
         podreel will <span class="font-bold">increase</span> your podcast
         downloads,<br class="hidden md:block" />
