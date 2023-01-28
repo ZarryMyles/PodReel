@@ -11,12 +11,16 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="jquery-3.6.1.min.js"></script>
   </head>
   <body>
     <!-- Navbar -->
     <div id="stickyNav" class="gradient-box-nav pr-1 md:pr-4">
       <div id="logo" class="py-4">
-        <img src="assets/podreel-logo.svg" class="-mt-4 -mr-4" />
+        <img
+          src="assets/podreel-logo.svg"
+          class="md:-mt-4 md:w-full w-[64px] -mr-2 md:-mr-4"
+        />
         <p>podreel</p>
       </div>
       <a href="add link to get early access"
@@ -59,7 +63,7 @@
             get closer to <b>generating revenue off your podcast.</b>
           </p>
         </div>
-        <a class="earlyAccess mt-[30px]" href=""
+        <a class="earlyAccess md:text-[21px] text-[28px] mt-[30px]" href=""
           ><button class="gradient-box">Get Early Access</button></a
         >
         <a class="mt-[30px]" id="inspireLink" href="#podreelsToInspire">
@@ -184,9 +188,9 @@
           <div
             class="h-1/2 flex flex-col text-center justify-end text-white pb-5 px-6"
           >
-            <p class="text-[19px]">[AUDIO PODCAST]</p>
+            <p class="text-sm md:text-[19px] mb-3 md:mb-0">[AUDIO PODCAST]</p>
             <p
-              class="underP text-[22px] md:text-[40px] font-inter font-semibold leading-tight"
+              class="underP text-[28px] md:text-[40px] font-inter font-semibold leading-tight"
             >
               James Clear on Atomic Habits
             </p>
@@ -205,7 +209,7 @@
             class="h-1/2 flex flex-col text-center justify-end text-white pb-5 px-6"
           >
             <p
-              class="underP text-[22px] md:text-[40px] font-inter font-semibold leading-tight"
+              class="underP text-[28px] md:text-[40px] font-inter font-semibold leading-tight"
             >
               Naval Ravikant on wealth and joy
             </p>
@@ -224,7 +228,7 @@
             class="h-1/2 flex flex-col text-center justify-end text-white pb-5 px-6"
           >
             <p
-              class="underP text-[22px] md:text-[40px] font-inter font-semibold leading-tight"
+              class="underP text-[28px] md:text-[40px] font-inter font-semibold leading-tight"
             >
               Kunal Shah on Human Motivations
             </p>
@@ -235,13 +239,14 @@
 
     <!-- Share Section -->
     <div
-      class="pageSection mt-10 pb-9 md:rounded-[60px] rounded-t-[60px] ease-linear transition-all duration-500"
+      class="pageSection mt-10 pb-9 md:rounded-[60px] rounded-[40px] ease-linear transition-all duration-500"
       id="podreelIsForYou"
     >
-      <div id="forYouTitle">
+      <div id="forYouTitle" class="px-5 pt-[30px]">
         <h1
-          style="font-family: 'Inter', sans-serif"
-          class="text-[40px] md:text-[75px]"
+          class="text-[40px] md:text-[75px] md:mt-10 mt-5 leading-[107%] mb-4"
+          \
+          style="font-family: 'Satoshi', sans-serif"
         >
           Where can I share podreels?
         </h1>
@@ -252,19 +257,19 @@
       <div class="px-4 md:px-24">
         <div
           id="selection2"
-          class="selection2 px-2 py-3 w-full md:rounded-[150px] mx-auto md:bg-[#544feb] md:text-[24px] text-[20px] grid grid-cols-4 gap-3"
+          class="selection2 px-2 py-3 w-full md:rounded-[150px] mx-auto md:bg-[#544feb] md:text-[24px] md:mt-[48px] text-[20px] grid grid-cols-4 gap-1"
         >
           <button
             onclick="switchShareSection(1);"
             id="shareOption1"
-            class="bg-[#544feb] md:rounded-[100px] py-2 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flexrounded-xl"
+            class="bg-[#544feb] md:rounded-[100px] py-3 px-3 md:px-0 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flexrounded-xl"
           >
             Podcast apps
           </button>
           <button
             onclick="switchShareSection(2);"
             id="shareOption2"
-            class="bg-[#544feb] md:rounded-[100px] py-2 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flex rounded-xl"
+            class="bg-[#544feb] md:rounded-[100px] py-3 px-3 md:px-0 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flex rounded-xl"
             style="background-color: #544feb; color: rgba(255, 255, 255, 0.6)"
           >
             Web Pages
@@ -272,7 +277,7 @@
           <button
             onclick="switchShareSection(3);"
             id="shareOption3"
-            class="bg-[#544feb] md:rounded-[100px] py-2 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flexrounded-xl"
+            class="bg-[#544feb] md:rounded-[100px] py-3 px-3 md:px-0 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flexrounded-xl"
             style="background-color: #544feb; color: rgba(255, 255, 255, 0.6)"
           >
             Social Media
@@ -280,7 +285,7 @@
           <button
             onclick="switchShareSection(4);"
             id="shareOption4"
-            class="bg-[#544feb] md:rounded-[100px] py-2 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flex rounded-xl"
+            class="bg-[#544feb] md:rounded-[100px] py-3 md:py-3 rounded-xl col-span-2 md:col-span-1 items-center flex rounded-xl"
             style="background-color: #544feb; color: rgba(255, 255, 255, 0.6)"
           >
             Transcripts
@@ -306,6 +311,7 @@
         <p class="hidden md:block h-full text-7xl">✨</p>
         <div class="flex flex-col justify-center">
           <h1
+            style="font-family: 'Satoshi', sans-serif"
             class="font-inter leading-[46px] leading-[114%] font-bold text-[40px] md:text-[67px]"
           >
             Sign up to <span class="signGrad">boost your</span><br />
@@ -316,7 +322,7 @@
           </p>
           <a class="" href="add link to get early access"
             ><button
-              class="btn-gradient-2 flex items-center px-[29px] mx-auto text-black justify-center"
+              class="btn-gradient-2 flex items-center md:text-[21px] font-semibold text-[28px] px-[29px] mx-auto text-black justify-center"
             >
               Get Early Access
             </button></a
@@ -327,15 +333,22 @@
     </div>
 
     <!-- Footer -->
-    <div id="warning" class="w-screen bg-[#FE0000] flex flex-col h-6">
-      <div class="text-white font-inter text-[16px] flex justify-center">
-        <div class="track hidden md:block">
-          ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
-          Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
-          Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
-          Warning - Proceed with caution
-        </div>
-        <div class="track md:hidden">⚠️ Warning - Proceed with caution</div>
+
+    <div
+      class="w-screen py-1 border-t-[3px] border-[#FE0000] bg-[#FE0000] text-white font-inter font-[600] text-[16px] flex justify-center"
+    >
+      <div
+        class="md:block hidden overflow-clip w-screen h-[24px]"
+        data-duplicated="true"
+        data-direction="left"
+      >
+        ⚠️ Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
+        Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
+        Warning - Proceed with caution ⚠️ Warning - Proceed with caution ⚠️
+        Warning - Proceed with caution
+      </div>
+      <div class="md:hidden">
+        <span class="-mt-1">⚠️</span> Warning - Proceed with caution
       </div>
     </div>
     <div
