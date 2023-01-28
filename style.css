@@ -107,12 +107,13 @@ button {
 .earlyAccess button {
   background-color: white;
   text-decoration: none;
+  width: fit-content;
   /* width: 223px; */
   height: 65px;
   color: black;
   font-weight: 700;
   font-family: "Inter", sans-serif;
-  font-size: 21px;
+  /* font-size: 21px; */
   border-radius: 18px;
   /* border: 3px solid; */
   /* border-color: linear-gradient(90deg, #ff2424, #a200ff),
@@ -160,7 +161,7 @@ button {
   cursor: pointer;
 }
 .selection2 {
-  margin-top: 48px;
+  /* margin-top: 48px; */
   /* margin-left: auto;
   margin-right: auto; */
   /* display: flex; */
@@ -475,15 +476,15 @@ button {
 }
 #forYouTitle {
   text-align: center;
-  padding: 10px;
-  padding-top: 30px;
+  /* padding: 10px;
+  padding-top: 30px; */
   margin: 0;
 }
 #forYouTitle h1 {
   font-weight: 700;
   /* font-size: 75px; */
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 #forYouTitle h2 {
   font-weight: 500;
